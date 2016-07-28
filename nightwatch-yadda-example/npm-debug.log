@@ -1,0 +1,181 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'yadda' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'yadda', null ]
+7 verbose cache add spec yadda
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'yadda',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'yadda',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed yadda@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for yadda
+11 info addNameTag [ 'yadda', 'latest' ]
+12 silly mapToRegistry name yadda
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'yadda',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'yadda',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/yadda
+17 verbose addNameTag registry:https://registry.npmjs.org/yadda not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/yadda
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 5:09:48 PM
+21 verbose request id 7a95922d77548b7b
+22 verbose etag "BOMPBZO2GHX7H4K04PFOO1PC2"
+23 http request GET https://registry.npmjs.org/yadda
+24 http 304 https://registry.npmjs.org/yadda
+25 verbose headers { date: 'Wed, 25 May 2016 16:09:49 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"BOMPBZO2GHX7H4K04PFOO1PC2"',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-lhr6340-LHR',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1464192589.115612,VS0,VE236',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Wed, 25 May 2016 16:09:49 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"BOMPBZO2GHX7H4K04PFOO1PC2"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-lhr6340-LHR',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1464192589.115612,VS0,VE236',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/yadda from cache
+28 verbose get saving yadda to /Users/tsong/.npm/registry.npmjs.org/yadda/.cache.json
+29 verbose correctMkdir /Users/tsong/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for yadda with tag latest
+31 silly addNamed yadda@0.17.9
+32 verbose addNamed "0.17.9" is a plain semver version for yadda
+33 silly cache afterAdd yadda@0.17.9
+34 verbose afterAdd /Users/tsong/.npm/yadda/0.17.9/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/tsong/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/tsong/.npm/yadda/0.17.9/package/package.json written
+37 silly install resolved [ { name: 'yadda',
+37 silly install resolved     version: '0.17.9',
+37 silly install resolved     description: 'A true BDD framework for JavaScript',
+37 silly install resolved     main: './lib/index.js',
+37 silly install resolved     devDependencies:
+37 silly install resolved      { browserify: '10.2.6',
+37 silly install resolved        istanbul: '^0.4.2',
+37 silly install resolved        jshint: '^2.5.0',
+37 silly install resolved        karma: '^0.13.22',
+37 silly install resolved        'karma-browserify': '^5.0.2',
+37 silly install resolved        'karma-mocha': '^0.2.2',
+37 silly install resolved        'karma-phantomjs-launcher': '^1.0.0',
+37 silly install resolved        mocha: '*',
+37 silly install resolved        'phantomjs-prebuilt': '^2.1.5',
+37 silly install resolved        watchify: '^3.7.0' },
+37 silly install resolved     directories: { example: 'examples', test: 'test' },
+37 silly install resolved     scripts:
+37 silly install resolved      { test: 'mocha --recursive --reporter spec test',
+37 silly install resolved        karma: 'karma start karma.conf.js',
+37 silly install resolved        istanbul: 'istanbul cover _mocha -- -u exports --reporter spec',
+37 silly install resolved        examples: 'node bin/examples.js',
+37 silly install resolved        browserify: 'node bin/browserify.js',
+37 silly install resolved        jshint: 'find . -name *.js | grep -vE \'karma.conf.js|/node_modules/|/dist/|/components/|/component-browser/build/|/coverage/|qunit-1.10.0.js\' | xargs ./node_modules/.bin/jshint' },
+37 silly install resolved     repository: { type: 'git', url: 'git://github.com/acuminous/yadda.git' },
+37 silly install resolved     keywords:
+37 silly install resolved      [ 'BDD',
+37 silly install resolved        'Specification',
+37 silly install resolved        'Natural',
+37 silly install resolved        'Test',
+37 silly install resolved        'Behaviour',
+37 silly install resolved        'Driven',
+37 silly install resolved        'Jasmine',
+37 silly install resolved        'Mocha',
+37 silly install resolved        'QUnit',
+37 silly install resolved        'Nodeunit' ],
+37 silly install resolved     author: { name: 'Stephen Cresswell' },
+37 silly install resolved     license: 'Apache-2.0',
+37 silly install resolved     gitHead: '4754e8449c4f6d28e6357059287079a44a0dad29',
+37 silly install resolved     bugs: { url: 'https://github.com/acuminous/yadda/issues' },
+37 silly install resolved     homepage: 'https://github.com/acuminous/yadda#readme',
+37 silly install resolved     _id: 'yadda@0.17.9',
+37 silly install resolved     _shasum: 'f8fbc0e287e9e12e2a8cc9297be210cbc1ff2667',
+37 silly install resolved     _from: 'yadda@latest',
+37 silly install resolved     _npmVersion: '2.14.20',
+37 silly install resolved     _nodeVersion: '4.4.0',
+37 silly install resolved     _npmUser: { name: 'cressie176', email: 'npm@stephen-cresswell.net' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'f8fbc0e287e9e12e2a8cc9297be210cbc1ff2667',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/yadda/-/yadda-0.17.9.tgz' },
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/yadda-0.17.9.tgz_1463125775727_0.10457018041051924' },
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/yadda/-/yadda-0.17.9.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install yadda@0.17.9 into /usr/local/lib
+39 info installOne yadda@0.17.9
+40 verbose installOne of yadda to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/tsong/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/tsong/.npm/_locks/yadda-9a41a5ce87260220.lock for /usr/local/lib/node_modules/yadda
+43 silly install write writing yadda 0.17.9 to /usr/local/lib/node_modules/yadda
+44 verbose unbuild lib/node_modules/yadda
+45 silly gentlyRm /usr/local/lib/node_modules/yadda is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yadda
+47 verbose tar unpack /Users/tsong/.npm/yadda/0.17.9/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/yadda
+49 silly gentlyRm /usr/local/lib/node_modules/yadda is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yadda
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/tsong/.npm/yadda/0.17.9/package.tgz
+53 verbose unlock done using /Users/tsong/.npm/_locks/yadda-9a41a5ce87260220.lock for /usr/local/lib/node_modules/yadda
+54 verbose fstream_path /usr/local/lib/node_modules/yadda
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/yadda'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/tsong/projects/personal/testing/nightwatchjs/nightwatch-yadda-example
+60 error Darwin 14.5.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "yadda"
+62 error node v4.4.4
+63 error npm  v2.15.1
+64 error path /usr/local/lib/node_modules/yadda
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/yadda'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/yadda']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/yadda',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/yadda',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/yadda
+72 silly gentlyRm /usr/local/lib/node_modules/yadda is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yadda
